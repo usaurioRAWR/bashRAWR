@@ -1,26 +1,55 @@
 # bashRAWR
 Este curso básico de Bash cubre los comandos y conceptos fundamentales para manipular el sistema operativo mediante la terminal. ¡Sigue practicando y explorando más comandos avanzados! 😊
 
-### **Curso Básico de Bash**
+## **Curso Básico de Bash**
 
-#### **1. Introducción al Shell**
-- **¿Qué es el Shell?**
-  - Un interpretador de comandos que permite interactuar con el sistema operativo.
-  - Ejemplo: `ls`, `cat`, `mv`, etc.
+### **1. Introducción al Shell**
 
-- **Comandos básicos del prompt:**
-  ```
-  $ ls
-  $ cat
-  $ mv
-  $ cp
-  $ chmod
-  $ su
-  ```
+#### **¿Qué es el Shell?**
+El **Shell** es un programa interpretador de comandos que actúa como intermediario entre el usuario y el sistema operativo. Su propósito principal es ejecutar comandos y acceder a funciones del sistema para realizar tareas diarias.
+
+Al abrir la terminal, veías esto:
+```bash
+user@pc:~ $
+```
+Este es el **prompt** o línea de comando, donde escribe y ejecutas los comandos.
+
+#### **Composición del Prompt**
+El prompt consiste en:
+1. Tu nombre de usuario (`user`).
+2. El nombre del sistema operativo y la máquina (`pc`).
+3. El directorio actual (`~`), que es el directorio home del usuario.
+4. El símbolo `$`, que indica que estás listo para recibir una orden.
+
+#### **Sintaxis de Comandos**
+Los comandos se estructuran como:
+```bash
+comando [opciones] [argumentos]
+```
+- **Comando**: Es la acción que deseas ejecutar.
+- **Opciones**: Modificadores que modifican el comportamiento del comando.
+- **Argumentos**: Los objetos sobre los que actúa el comando.
+
+#### **Ejemplo de Comando**
+```bash
+ls   # Muestra los archivos y directorios en el directorio actual
+cat archivo.txt  # Muestra el contenido de archivo.txt
+mv archivo1.txt archivo2.txt  # Cambia el nombre de archivo1.txt a archivo2.txt
+```
+
+#### **Manejo de la Sintaxis**
+- Los comandos son case-sensitive, es decir, son sensibles a mayúsculas y minúsculas.
+- Las opciones y argumentos son obligatorios o opcionales según se indica.
+- Las partes que están entre corchetes (`[]`) son opcionales.
+
+#### **Ejemplo Complejo**
+```bash
+ls -l  # Muestra formato largo de los archivos
+```
 
 ---
 
-#### **2. Comandos Básicos**
+### **2. Comandos Básicos**
 **1. Muestra los archivos y directorios en un directorio:**
 ```bash
 ls [opciones]
@@ -48,7 +77,7 @@ cat > nuevo.txt  # crea un nuevo archivo y escribe en él
 
 ---
 
-#### **3. Manejo de Sesión**
+### **3. Manejo de Sesión**
 - **Salir del sistema:**
   ```bash
   exit
@@ -60,7 +89,7 @@ cat > nuevo.txt  # crea un nuevo archivo y escribe en él
 
 ---
 
-#### **4. Manejo de Archivos y Directorios**
+### **4. Manejo de Archivos y Directorios**
 **1. Copiar archivos:**
 ```bash
 cp [origen] [destino]
@@ -106,7 +135,7 @@ rm -f /tmp/file.txt  # borra el archivo sin mensaje de error
 
 ---
 
-#### **5. Permisos en Linux**
+### **5. Permisos en Linux**
 - **Ver permisos de un archivo:**
   ```bash
   ls -l [archivo]
@@ -132,7 +161,7 @@ rm -f /tmp/file.txt  # borra el archivo sin mensaje de error
 
 ---
 
-#### **6. Comodines y Búsqueda de Archivos**
+### **6. Comodines y Búsqueda de Archivos**
 - **Caracteres comodines:**
   - `*`: Cantidad de caracteres (ejemplo: `*a` busca archivos que terminan en "a").
   - `[ ]`: Busca exactamente los caracteres dentro del corchete.
@@ -154,7 +183,7 @@ grep -n "mensaje" archivo.txt  # muestra las líneas con "mensaje"
 
 ---
 
-#### **7. Redirección de Entrada y Salida**
+### **7. Redirección de Entrada y Salida**
 - **Redirección a archivo:**
   ```bash
   comando > archivo.txt
@@ -172,7 +201,7 @@ grep -n "mensaje" archivo.txt  # muestra las líneas con "mensaje"
 
 ---
 
-#### **8. Pipes para Enrutamiento de Comandos**
+### **8. Pipes para Enrutamiento de Comandos**
 - Ejemplo:
   ```bash
   ls -l | grep "d"    # muestrea los archivos que comienzan con "d"
@@ -184,7 +213,7 @@ grep -n "mensaje" archivo.txt  # muestra las líneas con "mensaje"
 
 ---
 
-#### **9. Contar y Verificar Archivos**
+### **9. Contar y Verificar Archivos**
 - **Contar palabras, líneas y caracteres:**
   ```bash
   wc [archivo]
@@ -204,7 +233,7 @@ grep -n "mensaje" archivo.txt  # muestra las líneas con "mensaje"
 
 ---
 
-#### **10. Variables de Entorno y Scripts**
+### **10. Variables de Entorno y Scripts**
 - **Variables de entorno:**
   ```bash
   echo $SHELL       # muestra el interprete actual (ejemplo: /bin/bash)
@@ -230,7 +259,7 @@ bash script.sh nombre usuario
 
 ---
 
-#### **11. Estructuras de Control en Bash**
+### **11. Estructuras de Control en Bash**
 **1. If y Case:**
 ```bash
 if [ condición ]; then
@@ -281,7 +310,7 @@ done
 
 ---
 
-#### **12. Operaciones Aritméticas**
+### **12. Operaciones Aritméticas**
 - **Expresión:**
   ```bash
   valor=`expr "3*4+2"`
@@ -294,7 +323,7 @@ done
 
 ---
 
-#### **13. Diseño de Menú en Bash**
+### **13. Diseño de Menú en Bash**
 ```bash
 echo "Menú principal"
 echo "1) Opcción 1"
