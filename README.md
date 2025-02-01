@@ -132,3 +132,7 @@ Estos comandos son esenciales para interactuar con archivos y directorios en `ba
 - **Ejemplo**: `clear`
 
 `clear` limpia la pantalla del terminal, ofreciendo un nuevo entorno de trabajo limpio.
+
+---
+
+### **3. **
