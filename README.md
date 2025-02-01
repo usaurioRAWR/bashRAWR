@@ -129,3 +129,123 @@ El comando `cat` nos permite la visualizar, creacion o concatenar de archivos.
 
 ---
 
+### **3. Redirección de Entrada y Salida**
+
+El sistema de redirección en Linux permite canalizar la salida o entrada de un comando hacia otro lugar, 
+como un archivo. Esto es útil para realizar tareas automatizadas o para manipular datos de manera eficiente.
+
+#### **Tipos de Redirección**
+1. **Salida (`>`)**
+   - Usa `-` para reemplazar el valor actual de la salida estándar.
+   - Ejemplo: 
+     ```bash
+     cat Fich1 Fich2 > FicheroResultante.txt
+     ```
+     - Si `FicheroResultante.txt` no existe, se crea.
+     - Si existe, se sobreescribe sin preguntar.
+
+2. **Concatenación de Salida (`>>`)**
+   - Usa `-` para añadir la salida actual a un archivo que ya exista.
+   - Ejemplo:
+     ```bash
+     echo "Hola" >> Mensaje.txt
+     ```
+     - Si `Mensaje.txt` existe, el contenido se añade al final.
+     - Si no existe, se crea.
+
+3. **Entrada (`<`)**
+   - Usa `-` para obtener la entrada del usuario o de un archivo.
+   - Ejemplo:
+     ```bash
+     wc -l < FicheroEnTaller
+     ```
+     - Lectura desde el teclado si no se proporciona un archivo.
+     - Puede reemplazar a stdin en comandos más avanzados.
+
+4. **Error (`2>`)**
+   - Redirección de la salida estándar al archivo de diario de errores ( stderr).
+   - Ejemplo:
+     ```bash
+     ls noexistente 2> /tmp/errores.log
+     ```
+     - Muestra un mensaje de error en la terminal.
+     - Escribe el mensaje también en `/tmp/errores.log`.
+
+5. **Error y Salida (`2>>`)**
+   - Combina stderr y stdout en un solo archivo, por defecto `stderr` primero.
+   - Ejemplo:
+     ```bash
+     ls noexistente 2>> /tmp/errores.txt
+     ```
+     - Muestra mensajes de error y éxito en `/tmp/errores.txt`.
+
+---
+
+#### **Ejemplo Práctico**
+
+**Sitúa:**
+```bash
+F1	F2	>F3
+Hola	Adiós
+		Hola
+		Adiós
+```
+
+**Resultado:**  
+El archivo `F3` contará con el texto:
+```
+Hola
+Adiós
+Hola
+Adiós
+```
+
+---
+
+#### **Uso de Redirección en Comandos de Concatenación**
+```bash
+A	B	>F3
+1	3	1
+2	4	2
+		3
+		4
+```
+- Resultado en `F3`:
+  ```
+  A B
+  1 3 1
+  2 4 2
+    3
+    4
+  ```
+
+---
+
+#### **Entrada y Redirección**
+**Ejemplo de Conteo de Líneas:**
+```bash
+wc -l < FicheroEnTaller
+```
+- Si `FicheroEnTaller` no existe, pide la entrada por teclado.
+- Si existe, lea el contenido del archivo.
+
+---
+
+#### **Redirección y Eliminación de Archivos**
+**Ejemplo de Concatenación y Creación de Archivo:**
+```bash
+cat F1 F2 >> F3
+```
+- Si `F3` no existe, se crea.
+- Si existe, se añaden los contenidos al final.
+
+**Ejemplo de Redirección y Sobreescritura:**
+```bash
+echo "Datos" > /tmp/file.txt
+```
+- El archivo `/tmp/file.txt` se sobreescribe con el mensaje "Datos".
+
+---
+
+### **Conclusión**
+La redirección es una herramienta poderosa para trabajar con datos en Linux. Conoce sus opciones y utiliza la combinación adecuada según tus necesidades, ya sean de entrada, salida o error manejo. ¡Practícale y descubre cómo simplifica tu trabajo diario! 😊
