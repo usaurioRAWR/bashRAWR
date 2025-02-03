@@ -11,3 +11,12 @@ Este curso básico de Bash cubre los comandos y conceptos fundamentales para man
    - 2.1. [AYUDA](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)#21-ayuda)
    - 2.2. [Control de Sesión](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)#22-control-de-sesión)
    - 2.3. [Manejo de Archivos y Directorios](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)#23-manejo-de-archivos-y-directorios)
+
+3. [Redireccionamiento]()
+   - [Dispositivos de Redirección Estándar (File Descriptors - FD)]()
+   - [Propósito del Redireccionamiento]()
+   - 3.1. [Redireccionamiento de Salida Estándar (stdout)]()
+   - 3.2. [Redireccionamiento de Entrada Estándar (stdin)]()
+   - 3.3. [Redireccionamiento de Error Estándar (stderr)]()
+   - 3.. [Redireccionamiento Combinado (stdout y stderr)]()
+   - []()
