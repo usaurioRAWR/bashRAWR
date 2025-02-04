@@ -51,6 +51,18 @@ El redireccionamiento es una herramienta poderosa que permite canalizar la entra
      ```
      - Muestra mensajes de error en la terminal y los redirecciona a `errores.txt`.
 
+### **3.4. Redireccionamiento Combinado (stdout y stderr)**
+- **`&>` y `&>>` (Redirección de `stderr`):**
+   - Redirige tanto la salida estándar `stdout` como el error estándar `stderr` a un archivo.
+   - **Ejemplo:**
+     ```bash
+     comando &> salida_y_errores.txt
+     ```
+     - Muestra mensajes de error en la terminal y los redirecciona a `errores.txt`.
+
+
+----
+
 5. **Redirección a `/dev/null`:**
    - Redirige la salida o entrada al dispositivo virtual que descarta toda la información.
    - **Ejemplo:**
