@@ -36,6 +36,16 @@ El comando `exit` cierra tu sesión actual, cerrando la terminal y volviéndose 
 
 Con `su`, puedes iniciar una nueva sesión como otro usuario. Si no especificas un nombre de usuario, te redirigirá a tu cuenta por defecto.
 
+#### c) logout
+- **Ejemplo**: `logout`
+
+Cierrar la sesión de usuario.
+
+#### d) clear
+- **Ejemplo**: `clear`
+
+`clear` limpia la pantalla del terminal, ofreciendo un nuevo entorno de trabajo limpio.
+
 ### **2.3. Manejo de Archivos y Directorios**
 Estos comandos son esenciales para interactuar con archivos y directorios en `bash`.
 
@@ -75,12 +85,5 @@ El comando `cat` nos permite la visualizar, creacion o concatenar de archivos.
   - Barra espaciadora: Ir a la siguiente página.
   - Enter: Ir a la línea siguiente.
   - `q`: Salir del visualizador.
-
-
-#### d) clear
-- **Sintaxis**: `clear`
-- **Ejemplo**: `clear`
-
-`clear` limpia la pantalla del terminal, ofreciendo un nuevo entorno de trabajo limpio.
 
 ---
