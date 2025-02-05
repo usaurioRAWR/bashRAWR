@@ -1,4 +1,5 @@
 ### **2. Tipo de Comandos (Comandos Básicos Parte 1)**
+Los comandos en Bash/Linux pueden clasificarse en tres tipos según su propósito o funcionalidad principal;
 
 ### **2.1. AYUDA**
 Estos comandos proporcionan información sobre cómo usar otros comandos en `bash`.
