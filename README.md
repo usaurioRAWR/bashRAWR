@@ -15,11 +15,12 @@ Este curso básico de Bash cubre los comandos y conceptos fundamentales para man
    - 2.2. [Control de Sesión](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)#22-control-de-sesión)
       - [Exit](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)/README.md#a-exit)
       - [Su](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)/README.md#b-su)
+      - [logout](/main/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)#c-logout)
+      - [clear](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)#d-clear)
    - 2.3. [Manejo de Archivos y Directorios](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)#23-manejo-de-archivos-y-directorios)
       - [ls](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)/README.md#a-ls)
       - [cat](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)/README.md#b-cat)
       - [more](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)/README.md#c-more)
-      - [clear](/2.%20Tipo%20de%20Comandos%20(Comandos%20Básicos%20Parte%201)/README.md#d-clear)
 
 3. [Redireccionamiento Y Tuberías](/3.%20Redirección/README.md#3-redireccionamiento-y-tuberías)
    - 3.1. [Redireccinamiento](/3.%20Redirección/README.md#31-redireccinamiento)
