@@ -14,7 +14,7 @@ El redireccionamiento es una herramienta poderosa que permite canalizar la entra
 
 ### **3.1.1. Redireccionamiento de Salida Estándar (stdout)**
 
-- **`>` (Sobreescribe):**
+- #### **`>` (Sobreescribe):**
    - Redirecciona `stdout` a un archivo, creándolo si no existe y sobrescribiéndolo.
    - **Ejemplo:**
      ```bash
@@ -23,7 +23,7 @@ El redireccionamiento es una herramienta poderosa que permite canalizar la entra
      - Si `listado.txt` no existe, se crea.
      - Si existe, se sobreescribe.
 
-- **`>>` (Concatena):**
+- #### **`>>` (Concatena):**
    - Redirecciona `stdout` a un archivo, concatenando su contenido al final del archivo existente.
    - **Ejemplo:**
      ```bash
@@ -34,7 +34,7 @@ El redireccionamiento es una herramienta poderosa que permite canalizar la entra
 
 ### **3.1.2. Redireccionamiento de Entrada Estándar (stdin)**
 
-- **`<` (Entrada desde un archivo):**
+- #### **`<` (Entrada desde un archivo):**
    - Redirecciona `stdin` desde un archivo en lugar de stdin por defecto.
    - **Ejemplo:**
      ```bash
@@ -42,7 +42,7 @@ El redireccionamiento es una herramienta poderosa que permite canalizar la entra
      ```
      - Lee la entrada del archivo `lista_de_datos.txt`.
 ### **3.1.3. Redireccionamiento de Error Estándar (stderr)**
-- **`2>` y `2>>` (Redirección de `stderr`):**
+- #### **`2>` y `2>>` (Redirección de `stderr`):**
    - Redirigen `stderr` a un archivo.
    - **Ejemplo:**
      ```bash
@@ -51,7 +51,7 @@ El redireccionamiento es una herramienta poderosa que permite canalizar la entra
      - Muestra mensajes de error en la terminal y los redirecciona a `errores.txt`.
 
 ### **3.1.4. Redireccionamiento Combinado (stdout y stderr)**
-- **`&>` y `&>>` (Redirección de `stdout` y `stderr`):**
+- #### **`&>` y `&>>` (Redirección de `stdout` y `stderr`):**
    - Redirige tanto la salida estándar `stdout` como el error estándar `stderr` a un archivo.
    - **Ejemplo:**
      ```bash
