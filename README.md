@@ -18,5 +18,5 @@ Este curso básico de Bash cubre los comandos y conceptos fundamentales para man
    - 3.1. [Redireccionamiento de Salida Estándar (stdout)]()
    - 3.2. [Redireccionamiento de Entrada Estándar (stdin)]()
    - 3.3. [Redireccionamiento de Error Estándar (stderr)]()
-   - 3.. [Redireccionamiento Combinado (stdout y stderr)]()
+   - 3.4. [Redireccionamiento Combinado (stdout y stderr)]()
    - []()
