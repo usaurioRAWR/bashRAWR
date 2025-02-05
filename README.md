@@ -1,6 +1,14 @@
 # bashRAWR
 Este curso básico de Bash cubre los comandos y conceptos fundamentales para manipular el sistema operativo mediante la terminal. ¡Sigue practicando y explorando más comandos avanzados! 😊
 
+> 🌟 Nota importante 🌟
+> 
+> En este curso, nos referiremos a ciertos comandos como "comandos básicos". 🛠️
+>
+> ¿Por qué? Porque son las herramientas esenciales que todo usuario necesita para dar sus primeros pasos en la terminal. 🐚✨ No los llamamos "básicos" porque sean simples o menos importantes, ¡todo lo contrario! Son los cimientos sobre los cuales se construyen habilidades más avanzadas en el uso de Bash. 🚀
+>
+> Dominar estos comandos es clave para manejar sistemas Unix/Linux de manera eficiente y desbloquear todo el potencial de la línea de comandos. 💻🔑
+
 ## **Indice**
 1. [Introducción al Shell](/1.%20Introducción%20al%20Shell#1-introducción-al-shell)
    - 1.1. [¿Qué es el Shell?](/1.%20Introducción%20al%20Shell#12-composición-del-prompt)
